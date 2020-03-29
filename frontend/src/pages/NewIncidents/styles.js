@@ -1,19 +1,18 @@
 import styled from "styled-components";
-
 import {
   baseContainerStyle,
   baseContentStyle,
+  baseTextAreaStyle,
   baseInputStyle
 } from "../../common/styles";
 
-export const RegisterContainer = styled.div`
+export const NewIncidentContainer = styled.div`
   ${baseContainerStyle}
   justify-content: center;
 `;
 
 export const Content = styled.div`
   ${baseContentStyle}
-  border-radius: 8px;
 `;
 
 export const Section = styled.section`
@@ -34,13 +33,8 @@ export const P = styled.p`
 
 export const Input = styled.input`
   ${baseInputStyle}
-  margin-top: 8px;
 `;
 
-export const InputGroup = styled.div`
-  display: flex;
-
-  input + input {
-    margin-left: 8px;
-  }
+export const TextArea = styled.textarea`
+  ${baseTextAreaStyle}
 `;

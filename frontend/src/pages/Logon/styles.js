@@ -1,20 +1,14 @@
 import styled from "styled-components";
+import { baseContainerStyle, baseInputStyle } from "../../common/styles";
 
 export const LogonContainer = styled.div`
-  width: 100%;
-  max-width: 1120px;
-  height: 100vh;
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${baseContainerStyle}
 `;
 
 export const Section = styled.section`
-  width: 100%;
-  max-width: 350px;
   margin-right: 30px;
+  max-width: 350px;
+  width: 100%;
 `;
 
 export const Form = styled.form`
@@ -24,4 +18,8 @@ export const Form = styled.form`
 export const H1 = styled.h1`
   font-size: 32px;
   margin-bottom: 32px;
+`;
+
+export const FormInput = styled.input`
+  ${baseInputStyle}
 `;

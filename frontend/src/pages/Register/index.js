@@ -1,21 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 
-import { A, Button } from "../../common/styles";
+import api from "../../services/api";
+
+import { A, Button, Form } from "../../common/styles";
 import {
   RegisterContainer,
   Content,
   Section,
   H1,
   P,
-  Form,
   Input,
   InputGroup
 } from "./styles";
 
 import logoImg from "../../assets/logo.svg";
 
-function Register() {
+const Register = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useState("");
+
+  const history = useHistory();
+
+  const handleRegister = async e => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      email,
+      telephone,
+      city,
+      country
+    };
+    console.log(data);
+
+    try {
+      const res = await api.post("npos", data);
+
+      alert(`Your access ID: ${res.data.id}`);
+      history.push("/");
+    } catch (err) {
+      alert("Error on registering, try again.");
+    }
+  };
+
   return (
     <RegisterContainer>
       <Content>
@@ -24,19 +56,40 @@ function Register() {
           <H1>Register</H1>
           <P>Signup on our platform and help people find our NPO cases</P>
 
-          <A to="/">
+          <A to="/profile">
             <FiArrowLeft size={16} color="#E02041" />
             Go back
           </A>
         </Section>
-        <Form>
-          <Input placeholder="NPO name" />
-          <Input type="email" placeholder="Email" />
-          <Input placeholder="Telephone number" />
+        <Form onSubmit={handleRegister}>
+          <Input
+            placeholder="NPO name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <Input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+          <Input
+            placeholder="Telephone number"
+            value={telephone}
+            onChange={e => setTelephone(e.target.value)}
+          />
 
           <InputGroup>
-            <Input placeholder="City" />
-            <Input placeholder="Country" />
+            <Input
+              placeholder="City"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+            />
+            <Input
+              placeholder="Country"
+              value={country}
+              onChange={e => setCountry(e.target.value)}
+            />
           </InputGroup>
 
           <Button type="submit">Register</Button>
@@ -44,6 +97,6 @@ function Register() {
       </Content>
     </RegisterContainer>
   );
-}
+};
 
 export default Register;

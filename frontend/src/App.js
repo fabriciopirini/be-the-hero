@@ -10,10 +10,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
   }
-
-  input, button, textarea {
-    font-size: 18px;
-  }
 `;
 
 function App() {
