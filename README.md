@@ -33,9 +33,18 @@ An application created using React, React Native, Expo and Node.js in order to h
 
 ### Mobile
 
-- [ ] Splash screen
-- [ ] Configurate navigation
-- [ ] Cases page
-- [ ] Cases details
-- [ ] Open Dialer and Email
-- [ ] Connect to API
+- [X] Splash screen
+- [X] Configurate navigation
+- [X] Cases page
+- [X] Cases details
+- [X] Open Whatsapp and Email
+- [X] Connect to API
+
+### Improvements
+
+- [X] Validation
+- [ ] Tests
+- [ ] Deploy
+- [ ] Static linters and formatter: ESLint, Prettier, etc
+- [ ] JWT Authentication
+- [X] Styled Components

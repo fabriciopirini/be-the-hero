@@ -20,7 +20,7 @@ import logoImg from "../../assets/logo.svg";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [telephone, setTelephone] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
 
@@ -32,7 +32,7 @@ const Register = () => {
     const data = {
       name,
       email,
-      telephone,
+      whatsapp,
       city,
       country
     };
@@ -74,9 +74,9 @@ const Register = () => {
             onChange={e => setEmail(e.target.value)}
           />
           <Input
-            placeholder="Telephone number"
-            value={telephone}
-            onChange={e => setTelephone(e.target.value)}
+            placeholder="Whatsapp number"
+            value={whatsapp}
+            onChange={e => setWhatsapp(e.target.value)}
           />
 
           <InputGroup>

@@ -8,7 +8,7 @@ module.exports = {
     return res.json(npos);
   },
   async create(req, res) {
-    const { name, email, telephone, city, country } = req.body;
+    const { name, email, whatsapp, city, country } = req.body;
 
     const id = crypto.randomBytes(4).toString("HEX");
 
@@ -16,7 +16,7 @@ module.exports = {
       id,
       name,
       email,
-      telephone,
+      whatsapp,
       city,
       country
     });
