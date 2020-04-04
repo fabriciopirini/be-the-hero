@@ -43,7 +43,7 @@ An application created using React, React Native, Expo and Node.js in order to h
 ### Improvements
 
 - [X] Validation
-- [ ] Tests
+- [-] Tests
 - [ ] Deploy
 - [ ] Static linters and formatter: ESLint, Prettier, etc
 - [ ] JWT Authentication
