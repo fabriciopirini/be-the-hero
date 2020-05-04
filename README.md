@@ -1,6 +1,22 @@
-# Be the Hero
+<h1 align="center">Welcome to Be The Hero 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-An application created using React, React Native, Expo and Node.js in order to help Non-profit organizations to raise funds for their cases.
+> An application created using React, React Native, Expo and Node.js in order to help Non-profit organizations to raise funds for their cases.
+
+## Demos
+
+### Web
+
+![Demo](demo-be-the-hero-web.gif)
+
+### Mobile
+
+![Demo](demo-be-the-hero-mobile.gif)
 
 ## Features
 
@@ -13,38 +29,57 @@ An application created using React, React Native, Expo and Node.js in order to h
 
 #### Functionalities
 
-- [X] NPO Login
-- [X] NPO Logout
-- [X] Register NPO
-- [X] Register case
-- [X] Delete case
-- [X] List all cases from NPO
-- [X] List all cases
-- [X] Contact NPO
+- [x] NPO Login
+- [x] NPO Logout
+- [x] Register NPO
+- [x] Register case
+- [x] Delete case
+- [x] List all cases from NPO
+- [x] List all cases
+- [x] Contact NPO
 
 ### Frontend
 
-- [X] Login page
-- [X] Configurate Routes
-- [X] Register NPO
-- [X] List all cases from NPO
-- [X] Register new case
-- [X] Connect to API
+- [x] Login page
+- [x] Configurate Routes
+- [x] Register NPO
+- [x] List all cases from NPO
+- [x] Register new case
+- [x] Connect to API
 
 ### Mobile
 
-- [X] Splash screen
-- [X] Configurate navigation
-- [X] Cases page
-- [X] Cases details
-- [X] Open Whatsapp and Email
-- [X] Connect to API
+- [x] Splash screen
+- [x] Configurate navigation
+- [x] Cases page
+- [x] Cases details
+- [x] Open Whatsapp and Email
+- [x] Connect to API
 
 ### Improvements
 
-- [X] Validation
+- [x] Validation
 - [-] Tests
 - [ ] Deploy
 - [ ] Static linters and formatter: ESLint, Prettier, etc
 - [ ] JWT Authentication
-- [X] Styled Components
+- [x] Styled Components
+
+## Run
+
+To run, run the `backend` then the `frontend` and/or the `mobile`. The specific instructions to run each service is detailed on the README inside each folder.
+
+## Author
+
+👤 **Fabricio Pirini**
+
+- Website: https://fabriciopirini.netlify.app/
+- Github: [@fabriciopirini](https://github.com/fabriciopirini)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
