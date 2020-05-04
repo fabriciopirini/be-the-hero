@@ -70,9 +70,11 @@ routes.post(
       description: Joi.string().required(),
       value: Joi.number().required(),
     }),
-    [Segments.HEADERS]: Joi.object().keys({
-      authorization: Joi.string().required(),
-    }),
+    [Segments.HEADERS]: Joi.object()
+      .keys({
+        authorization: Joi.string().required(),
+      })
+      .unknown(),
   }),
   IncidentsController.create
 );
@@ -83,9 +85,11 @@ routes.delete(
     [Segments.PARAMS]: Joi.object().keys({
       id: Joi.number().required(),
     }),
-    [Segments.HEADERS]: Joi.object().keys({
-      authorization: Joi.string().required(),
-    }),
+    [Segments.HEADERS]: Joi.object()
+      .keys({
+        authorization: Joi.string().required(),
+      })
+      .unknown(),
   }),
   IncidentsController.delete
 );
